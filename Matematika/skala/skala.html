@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../cardTemplate/all.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="../../Fisika/fisika.html">Fisika</a></li> 
+                <li class="active"><a href="../matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../matematika.html">Matematika </a>| Skala</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Skala</h2>
+                <p>Skala adalah perbandingan antara jarak pada gambar/peta dengan jarak sebenarnya di lapangan. 
+                    Skala digunakan dalam peta, denah, dan gambar teknik untuk menggambarkan objek yang besar 
+                    (seperti kota, bangunan, atau wilayah) dalam ukuran yang lebih kecil secara proporsional.
+                </p><br>
+                
+            </div>
+            <div class="hitung-wrapper">
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Rumus Skala</h2>
+                        <p>Skala = Jarak pada peta / Jarak sebenarnya<br>
+                            Jarak pada peta = Skala x Jarak sebenarnya<br>
+                            Jarak sebenarnya = Jarak pada peta / Skala<br><br>
+                            
+                        </p>
+                    </div>
+                    <div class="hitungSkala">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input">
+                            <div id="inputSkalaList">
+                                <button type="button" id="btnTambahRumusSkala">Rumus Mencari Skala</button>
+                                <button type="button" id="btnTambahRumusJarakPeta">Rumus Mencari Jarak pada peta</button>
+                                <button type="button" id="btnTambahRumusJarakSebenarnya">Rumus Mencari Jarak sebenarnya</button>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungSkala()">Hitung</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+    <script src="../../cardTemplate/all.js"></script>
+</body>
+</html>

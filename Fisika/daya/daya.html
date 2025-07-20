@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Daya</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Daya</h2>
+                <p>Dalam fisika, daya adalah besaran yang menyatakan laju atau kecepatan melakukan usaha (kerja) atau mengubah energi dalam satu satuan waktu.
+                    Daya mengukur seberapa cepat energi digunakan atau dihasilkan. 
+                    Satuan Internasional untuk daya adalah watt (W), yang setara dengan satu joule per detik (J/s). 
+                    Dalam kehidupan sehari-hari, daya sering digunakan untuk menggambarkan kekuatan mesin, lampu, dan perangkat listrik lainnya.
+                </p>
+                <h2>Rumus Daya</h2>
+                <p>P = W / t<br>
+                    Keterangan:<br>
+                    P = Daya (Watt, W)<br>
+                    W = Usaha atau energi (Joule, J)<br>
+                    t = Waktu (detik, s)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>W</i></p>
+                        <input type="number" id="W" placeholder="Usaha (J)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>t</i></p>
+                        <input type="number" id="t" placeholder="Waktu (s)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungDaya()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

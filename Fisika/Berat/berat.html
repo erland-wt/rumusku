@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li>
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Berat</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Berat</h2>
+                <p>Dalam fisika, berat dari suatu benda adalah gaya yang disebabkan oleh gravitasi berkaitan dengan massa benda tersebut. 
+                    Massa benda adalah tetap di mana-mana, tetapi berat sebuah benda akan berubah-ubah sesuai dengan besarnya percepatan gravitasi di tempat tersebut.<br><br>
+                    Berat dihitung dengan mengalikan massa sebuah benda dengan percepatan gravitasi di mana benda tersebut berada.
+                </p>
+                <h2>Rumus Berat</h2>
+                <p>W = m x g<br>
+                    Keterangan:<br>
+                    W    = Berat Benda, satuan: Newton (N)<br>
+                    m    = Massa, satuan: kilogram (kg)<br>
+                    g = percepatan gravitasi (9,8 m/s²)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Massa (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>g</i></p>
+                        <input type="number" id="g" placeholder="Gravitasi (m/s²)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungBerat()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

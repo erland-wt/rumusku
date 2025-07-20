@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li>
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Bunyi & Cahaya</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Bunyi & Cahaya</h2>
+                <!-- Bunyi -->
+                <div class="isi-wrapper">
+                    <h2>Bunyi</h2>
+                    <p>Bunyi adalah gelombang mekanik longitudinal yang dihasilkan oleh getaran benda dan merambat melalui medium seperti udara, air, atau padatan.
+                        Bunyi memiliki beberapa karakteristik penting, termasuk frekuensi, amplitudo, dan kecepatan. Frekuensi bunyi menentukan nada atau tinggi suara, sedangkan amplitudo menentukan kekuatan atau volume suara. Kecepatan bunyi bervariasi tergantung pada medium yang dilalui.
+                        Bunyi dapat dipantulkan, dibiaskan, dan diserap oleh berbagai permukaan. Gelombang bunyi juga dapat mengalami interferensi, yang dapat menghasilkan efek seperti gema atau resonansi.
+                    </p><br>
+                    <p><b>Tiga syarat bunyi bisa didengar manusia:</b></p>
+                    <ul>
+                        <ol><b>1. Ada sumber bunyi</b> (benda yang bergetar)</ol>
+                        <ol><b>2. Ada medium untuk merambat</b> (udara, air, logam, dll.)</ol>
+                        <ol><b>3. Ada pendengar</b> (telinga manusia atau alat)</ol>
+                    </ul><br>
+                    <!-- Cepat Rambat Bunyi -->
+                    <h2>A. Rumus Cepat Rambat Bunyi</h2>
+                    <p>𝑣 = s/t<br>
+                        Keterangan:<br>
+                        𝑣 = Cepat rambat bunyi (m/s)<br>
+                        s = Jarak (m)<br>
+                        𝑡 = Waktu (s)
+                    </p>
+                    <div class="hitung">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="s" placeholder="Jarak (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="t" placeholder="Waktu (s)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungCepatRambatBunyi()">Hitung</button>
+                    </div><br>
+                    <!-- Hukum Pemantulan Bunyi (Gema) -->
+                    <h2>B. Rumus Hukum Pemantulan Bunyi (Gema)</h2>
+                    <p>s = (v ⋅ t)/2<br>
+                        Keterangan:<br>
+                        s = Jarak (m)<br>
+                        𝑣 = Cepat rambat bunyi (m/s)<br>
+                        𝑡 = Waktu (s)
+                    </p><br>
+                    <div class="hitungGema">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>v</i></p>
+                                <input type="number" id="vGema" placeholder="Cepat rambat bunyi (m/s)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tGema" placeholder="Waktu (s)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungGema()">Hitung</button>
+                    </div><br>
+                    <!-- Frekuensi Nada (Dawai atau Pipa) -->
+                    <h2>C. Rumus Frekuensi Nada (Dawai atau Pipa)</h2>
+                    <p>f = (n ⋅ v)/2L<br>
+                        Keterangan:<br>
+                        f = Frekuensi (Hz)<br>
+                        n = Tingkat nada (1, 2, 3, ...)<br>
+                        v = Cepat rambat gelombang (m/s)<br>
+                        L = Panjang dawai atau pipa (m)
+                    </p><br>
+                    <div class="hitungDawai">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>n</i></p>
+                                <input type="number" id="nDawai" placeholder="Tingkat nada" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>v</i></p>
+                                <input type="number" id="vDawai" placeholder="Cepat rambat gelombang (m/s)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>L</i></p>
+                                <input type="number" id="LDawai" placeholder="Panjang dawai (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungDawai()">Hitung</button>
+                    </div><br>
+                </div>
+            </div><br><br>
+
+            <!-- Cahaya -->
+            <div class="penjelasan">
+                <div class="isi-wrapper">
+                    <h2>Cahaya</h2>
+                    <p>Cahaya adalah gelombang elektromagnetik yang bisa merambat tanpa medium dan merupakan sumber utama penglihatan kita.
+                        Cahaya memiliki sifat-sifat seperti refleksi, refraksi, difraksi, dan interferensi.<br><br>
+                        <b>Refleksi</b> adalah pemantulan cahaya dari permukaan,<br>
+                        sedangkan <b>Refraksi</b> adalah pembiasan cahaya saat melewati medium yang berbeda.<br>
+                        <b>Difraksi</b> adalah pembelokan cahaya saat melewati celah sempit, dan interferensi adalah interaksi antara dua gelombang cahaya yang menghasilkan pola terang dan gelap.
+                    </p><br>
+                    <h2>Rumus Cepat Rambat Gelombang Cahaya</h2>
+                    <p>v = f ⋅ λ<br>
+                        Keterangan:<br>
+                        v = Cepat rambat gelombang (m/s)<br>
+                        f = Frekuensi (Hz)<br>
+                        𝜆 = Panjang gelombang (m)
+                    </p><br>
+                    <div class="hitungGCahaya">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>f</i></p>
+                                <input type="number" id="fGCahaya" placeholder="Frekuensi (Hz)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>𝜆</i></p>
+                                <input type="number" id="lambdaGCahaya" placeholder="Frekuensi (Hz)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungGCahaya()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

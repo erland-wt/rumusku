@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Usaha</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Usaha</h2>
+                <p>Usaha adalah jumlah energi yang digunakan untuk menggerakkan suatu benda. 
+                    Dilansir dari OpenStax Rice University, dalam fisika usaha adalah penerapam 
+                    kekuataan gaya (F) untuk memindahkan suatu benda sejauh suatu jarak (s).
+                </p>
+                <h2>Rumus Usaha</h2>
+                <p>W = F x s<br>
+                    Keterangan:<br>
+                    W    = Usaha (work), satuan: Joule<br>
+                    F    = Gaya (force), satuan: Newton (N)<br>
+                    s    = Jarak atau perpindahan (meter)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>F</i></p>
+                        <input type="number" id="F" placeholder="Gaya (N)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>s</i></p>
+                        <input type="number" id="s" placeholder="Jarak (m)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungUsaha()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,510 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FFF2E1;
+}
+
+.container {
+    width: 100%;
+    height: 85vh;
+}
+
+/* Navbar Start */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    margin-bottom: 5px;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+nav ul li.active a {
+    background-color: #FFF2E1;
+    color: #A79277;
+    border-radius: 5px;
+}
+
+nav p {
+    font-size: 2.5em;
+    font-weight: semi-bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF2E1;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    transform: translate(0, 7px);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFF2E1;
+    color: #A79277;
+    transition: 0.3s;
+}
+/* Navbar End */
+
+/* Hero Section Start */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(100vh - 200px);
+}
+
+.main-content img {
+    width: 30%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.sambutan {
+    width: 60%;
+    margin-right: 50px;
+}
+
+.sambutan h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #A79277;
+}
+
+.sambutan p {
+    font-size: 1.2em;
+    color: #A79277;
+    margin-top: 20px;
+}
+
+.sambutan ul li {
+    font-size: 1.2em;
+    color: #A79277;
+    margin-top: 10px;
+}
+/* Hero Section End */
+
+/* Footer Start */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: semi-bold;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+/* Footer End */
+@media (max-width: 1440px) {
+    .main-content {
+        height: 100%;
+    }
+
+    .main-content img {
+        width: 30%;
+    }
+
+    .sambutan {
+        width: 50%;
+    }
+
+    .sambutan h1 {
+        font-size: 2em;
+    }
+
+    .sambutan p {
+        font-size: 1.2em;
+    }
+
+    nav p {
+        font-size: 2.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 1281px) {
+    .main-content {
+        padding: 50px;
+        height: 100%;
+    }
+
+    .main-content img {
+        width: 30%;
+    }
+
+    .sambutan {
+        width: 50%;
+    }
+
+    nav p {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1024px){
+    .main-content img {
+        width: 30%;
+    }
+
+    .sambutan {
+        width: 50%;
+    }
+
+    .sambutan p {
+        font-size: 1em;
+    }
+
+    .sambutan h1 {
+        font-size: 1.5em;
+    } 
+
+    nav p {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .main-content img {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .sambutan {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sambutan h1 {
+        font-size: 1.3em;
+    }
+
+    .sambutan p,
+    .sambutan ul li {
+        margin-left: 20px;
+        font-size: 1em;
+    }
+
+    nav p {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content img {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .sambutan {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sambutan h1 {
+        font-size: 1.2em;
+    }
+
+    .sambutan p,
+    .sambutan ul li {
+        font-size: 0.9em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav p {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content-wrapper {
+        padding-bottom: 20px;
+    }
+
+    .hitung,
+    .hitungGGLInduksi,
+    .hitungFluksMagnetik,
+    .hitungHambatan,
+    .hitungArus,
+    .hitungLSegitiga,
+    .hitungLPersegi,
+    .hitungLPersegiPanjang,
+    .hitungLLingkaran,
+    .hitungLJajarGenjang,
+    .hitungLTrapesium,
+    .hitungLBelahKetupat,
+    .hitungLLayang,
+    .hitungLKubus,
+    .hitungLBalok,
+    .hitungLTabung,
+    .hitungLKerucut,
+    .hitungKSegitiga,
+    .hitungKPersegi,
+    .hitungKPersegiPanjang,
+    .hitungKLingkaran,
+    .hitungKJajarGenjang,
+    .hitungKTrapesium,
+    .hitungKBelahKetupat,
+    .hitungKLayangLayang,
+    .hitungKKubus,
+    .hitungKBalok,
+    .hitungVTabung,
+    .hitungVKerucut,
+    .hitungVBola,
+    .hitungVKubus,
+    .hitungVBalok,
+    .hitungMeanTunggal,
+    .hitungPythagoras,
+    .hitungSkala,
+    .hitungTurunanPangkat,
+    .hitungTurunanPenjumlahan,
+    .hitungTurunanPengurangan {
+        width: 90%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .content-wrapper .penjelasan h2,
+    .content-wrapper .hitung h2,
+    .content-wrapper .hitungGGLInduksi h2,
+    .content-wrapper .hitungFluksMagnetik h2,
+    .content-wrapper .hitungHambatan h2,
+    .content-wrapper .hitungArus h2,
+    .content-wrapper .hitungLSegitiga h2,
+    .content-wrapper .hitungLPersegi h2,
+    .content-wrapper .hitungLPersegiPanjang h2,
+    .content-wrapper .hitungLLingkaran h2,
+    .content-wrapper .hitungLJajarGenjang h2,
+    .content-wrapper .hitungLTrapesium h2,
+    .content-wrapper .hitungLBelahKetupat h2,
+    .content-wrapper .hitungLLayang h2,
+    .content-wrapper .hitungLKubus h2,
+    .content-wrapper .hitungLBalok h2,
+    .content-wrapper .hitungLTabung h2,
+    .content-wrapper .hitungLKerucut h2,
+    .content-wrapper .hitungKSegitiga h2,
+    .content-wrapper .hitungKPersegi h2,
+    .content-wrapper .hitungKPersegiPanjang h2,
+    .content-wrapper .hitungKLingkaran h2,
+    .content-wrapper .hitungKJajarGenjang h2,
+    .content-wrapper .hitungKTrapesium h2,
+    .content-wrapper .hitungKBelahKetupat h2,
+    .content-wrapper .hitungKLayangLayang h2,
+    .content-wrapper .hitungKKubus h2,
+    .content-wrapper .hitungKBalok h2,
+    .content-wrapper .hitungVTabung h2,
+    .content-wrapper .hitungVKerucut h2,
+    .content-wrapper .hitungVBola h2,
+    .content-wrapper .hitungVKubus h2,
+    .content-wrapper .hitungVBalok h2,
+    .content-wrapper .hitungMeanTunggal h2,
+    .content-wrapper .hitungPythagoras h2,
+    .content-wrapper .hitungSkala h2,
+    .content-wrapper .hitungTurunanPangkat h2,
+    .content-wrapper .hitungTurunanPenjumlahan h2,
+    .content-wrapper .hitungTurunanPengurangan h2 {
+        font-size: 1.8em;
+    }
+
+    .content-wrapper .penjelasan p,
+    .content-wrapper .hitung p,
+    .content-wrapper .hitungGGLInduksi p,
+    .content-wrapper .hitungFluksMagnetik p,
+    .content-wrapper .hitungHambatan p,
+    .content-wrapper .hitungArus p,
+    .content-wrapper .hitungLSegitiga p,
+    .content-wrapper .hitungLPersegi p,
+    .content-wrapper .hitungLPersegiPanjang p,
+    .content-wrapper .hitungLLingkaran p,
+    .content-wrapper .hitungLJajarGenjang p,
+    .content-wrapper .hitungLTrapesium p,
+    .content-wrapper .hitungLBelahKetupat p,
+    .content-wrapper .hitungLLayang p,
+    .content-wrapper .hitungLKubus p,
+    .content-wrapper .hitungLBalok p,
+    .content-wrapper .hitungLTabung p,
+    .content-wrapper .hitungLKerucut p,
+    .content-wrapper .hitungKSegitiga p,
+    .content-wrapper .hitungKPersegi p,
+    .content-wrapper .hitungKPersegiPanjang p,
+    .content-wrapper .hitungKLingkaran p,
+    .content-wrapper .hitungKJajarGenjang p,
+    .content-wrapper .hitungKTrapesium p,
+    .content-wrapper .hitungKBelahKetupat p,
+    .content-wrapper .hitungKLayangLayang p,
+    .content-wrapper .hitungKKubus p,
+    .content-wrapper .hitungKBalok p,
+    .content-wrapper .hitungVTabung p,
+    .content-wrapper .hitungVKerucut p,
+    .content-wrapper .hitungVBola p,
+    .content-wrapper .hitungVKubus p,
+    .content-wrapper .hitungVBalok p,
+    .content-wrapper .hitungMeanTunggal p,
+    .content-wrapper .hitungPythagoras p,
+    .content-wrapper .hitungSkala p,
+    .content-wrapper .hitungTurunanPangkat p,
+    .content-wrapper .hitungTurunanPenjumlahan p,
+    .content-wrapper .hitungTurunanPengurangan p {
+        font-size: 0.8em;
+    }
+
+    .content-wrapper .hasil {
+        font-size: 0.9em;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .content-wrapper .hasil p {
+        margin: 5px 0;
+    }
+
+    .content-wrapper input {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 380px) {
+    footer p {
+        display: none;
+    }
+}

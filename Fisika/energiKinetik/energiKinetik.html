@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Energi Kinetik</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Energi Kinetik</h2>
+                <p> Energi kinetik adalah energi yang dimiliki oleh suatu benda karena gerakannya.
+                    Energi kinetik tergantung pada massa benda dan kecepatan benda tersebut. Semakin besar massa dan kecepatan benda, semakin besar energi kinetiknya.
+                </p>
+                <h2>Rumus Energi Kinetik</h2>
+                <p>Eₖ = 1/2 m v²<br>
+                    Keterangan:<br>
+                    Eₖ = Energi kinetik (Joule, J)<br>
+                    m = Massa benda (kg)<br>
+                    v = Kecepatan benda (m/s)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Massa benda (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>v</i></p>
+                        <input type="number" id="v" placeholder="Kecepatan benda (m/s)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungEnergiKinetik()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

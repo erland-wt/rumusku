@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../cardTemplate/all.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="../../Fisika/fisika.html">Fisika</a></li> 
+                <li class="active"><a href="../matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../matematika.html">Matematika </a>| Keliling</p>
+            </div>
+            <div class="search-wrapper">
+                <input type="search" id="searchMatematika" placeholder="Cari rumus matematika...">
+            </div>
+            <div class="materi-cards-matematika">
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Segitiga</h2>
+                        <p><b>Rumus Keliling Segitiga</b></p>
+                        <p>K = a + b + c<br>
+                            Keterangan:<br>
+                            K = Keliling Segitiga (m)<br>
+                            a = Sisi 1 Segitiga (m)<br>
+                            b = Sisi 2 Segitiga (m)<br>
+                            c = Sisi 3 Segitiga (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKSegitiga">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aKSegitiga" placeholder="Sisi 1 (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>b</i></p>
+                                <input type="number" id="bKSegitiga" placeholder="Sisi 2 (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>c</i></p>
+                                <input type="number" id="cKSegitiga" placeholder="Sisi 3 (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKSegitiga()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Persegi</h2>
+                        <p><b>Rumus Keliling Persegi</b></p>
+                        <p>K = 4 * s<br>
+                            Keterangan:<br>
+                            K = Keliling Persegi (m)<br>
+                            s = Sisi Persegi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKPersegi">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sKPersegi" placeholder="Sisi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKPersegi()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Persegi Panjang</h2>
+                        <p><b>Rumus Keliling Persegi Panjang</b></p>
+                        <p>K = 2 * (p + l)<br>
+                            Keterangan:<br>
+                            K = Keliling Persegi (m)<br>
+                            p = Panjang Persegi Panjang (m)<br>
+                            l = Lebar Persegi Panjang (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKPersegiPanjang">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>p</i></p>
+                                <input type="number" id="pKPersegiPanjang" placeholder="Panjang (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>l</i></p>
+                                <input type="number" id="lKPersegiPanjang" placeholder="Lebar (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKPersegiPanjang()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Lingkaran</h2>
+                        <p><b>Rumus Keliling Lingkaran</b></p>
+                        <p>K = 2πr<br>
+                            Keterangan:<br>
+                            K = Keliling Lingkaran (m)<br>
+                            r = Jari-jari Lingkaran (m)<br>
+                            π (pi) = 3.14<br>
+                        </p>
+                    </div>
+                    <div class="hitungKLingkaran">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>r</i></p>
+                                <input type="number" id="rKLingkaran" placeholder="Jari-jari (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKLingkaran()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Jajar Genjang</h2>
+                        <p><b>Rumus Keliling Jajar Genjang</b></p>
+                        <p>K = 2 * (a + b)<br>
+                            Keterangan:<br>
+                            K = Keliling Jajar Genjang (m)<br>
+                            a = Alas Jajar Genjang (m)<br>
+                            b = Sisi Miring Jajar Genjang (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKJajarGenjang">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aKJajarGenjang" placeholder="Alas (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>b</i></p>
+                                <input type="number" id="bKJajarGenjang" placeholder="Sisi Miring (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKJajarGenjang()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Trapesium</h2>
+                        <p><b>Rumus Keliling Trapesium</b></p>
+                        <p>K = a + b + c + d<br>
+                            Keterangan:<br>
+                            K = Keliling Trapesium (m)<br>
+                            a = Sisi Atas Trapesium (m)<br>
+                            b = Sisi Bawah Trapesium (m)<br>
+                            c = Sisi Miring Kiri Trapesium (m)<br>
+                            d = Sisi Miring Kanan Trapesium (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKTrapesium">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aKTrapesium" placeholder="Sisi Atas (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>b</i></p>
+                                <input type="number" id="bKTrapesium" placeholder="Sisi Bawah (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>c</i></p>
+                                <input type="number" id="cKTrapesium" placeholder="Sisi Miring Kiri (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>d</i></p>
+                                <input type="number" id="dKTrapesium" placeholder="Sisi Miring Kanan (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKTrapesium()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Belah Ketupat</h2>
+                        <p><b>Rumus Keliling Belah Ketupat</b></p>
+                        <p>K = 4 * s<br>
+                            Keterangan:<br>
+                            K = Keliling Belah Ketupat (m)<br>
+                            s = Sisi Belah Ketupat (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKBelahKetupat">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sKBelahKetupat" placeholder="Sisi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKBelahKetupat()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Layang-layang</h2>
+                        <p><b>Rumus Keliling Layang-layang</b></p>
+                        <p>K = 2 * (s1 + s2)<br>
+                            Keterangan:<br>
+                            K = Keliling Layang-layang (m)<br>
+                            s1 = Sisi 1 Layang-layang (m)<br>
+                            s2 = Sisi 2 Layang-layang (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKLayangLayang">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s1</i></p>
+                                <input type="number" id="s1KLayangLayang" placeholder="Sisi 1 (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>s2</i></p>
+                                <input type="number" id="s2KLayangLayang" placeholder="Sisi 2 (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKLayangLayang()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Kubus</h2>
+                        <p><b>Rumus Keliling Kubus</b></p>
+                        <p>K = 12 * s<br>
+                            Keterangan:<br>
+                            K = Keliling Kubus (m)<br>
+                            s = Sisi Kubus (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKKubus">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sKKubus" placeholder="Sisi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKKubus()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Keliling Balok</h2>
+                        <p><b>Rumus Keliling Balok</b></p>
+                        <p>K = 4 * (p + l + t)<br>
+                            Keterangan:<br>
+                            K = Keliling Balok (m)<br>
+                            p = Panjang Balok (m)<br>
+                            l = Lebar Balok (m)<br>
+                            t = Tinggi Balok (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungKBalok">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>p</i></p>
+                                <input type="number" id="pKBalok" placeholder="Panjang (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>l</i></p>
+                                <input type="number" id="lKBalok" placeholder="Lebar (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tKBalok" placeholder="Tinggi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungKBalok()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+    <script src="../../cardTemplate/all.js"></script>
+</body>
+</html>

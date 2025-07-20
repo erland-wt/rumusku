@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../cardTemplate/all.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="../../Fisika/fisika.html">Fisika</a></li> 
+                <li class="active"><a href="../matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../matematika.html">Matematika </a>| Luas</p>
+            </div>
+            <div class="search-wrapper">
+                <input type="search" id="searchMatematika" placeholder="Cari rumus matematika...">
+            </div>
+            <div class="materi-cards-matematika">
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Segitiga</h2>
+                        <p><b>Rumus Luas Segitiga</b></p>
+                        <p>L = 1/2 * a * t<br>
+                            Keterangan:<br>
+                            L = Luas Segitiga (m²)<br>
+                            a = alas (m)<br>
+                            t = tinggi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLSegitiga">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aSegitiga" placeholder="Alas (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tSegitiga" placeholder="Tinggi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLSegitiga()">Hitung</button>
+                    </div>
+                </div>
+                
+    
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Persegi</h2>
+                        <p><b>Rumus Luas Persegi</b></p>
+                        <p>L = s * s<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            s = sisi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLPersegi">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sPersegi" placeholder="Sisi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLPersegi()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Persegi Panjang</h2>
+                        <p><b>Rumus Luas Persegi Panjang</b></p>
+                        <p>L = p * l<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            p = panjang (m)<br>
+                            l = lebar (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLPersegiPanjang">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>p</i></p>
+                                <input type="number" id="pPersegiPanjang" placeholder="Panjang (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>l</i></p>
+                                <input type="number" id="lPersegiPanjang" placeholder="Lebar (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLPersegiPanjang()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Lingkaran</h2>
+                        <p><b>Rumus Luas Lingkaran</b></p>
+                        <p>L = π * r²<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            π = 3.14<br>
+                            r = jari-jari (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLLingkaran">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>r</i></p>
+                                <input type="number" id="rLingkaran" placeholder="Jari-jari (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLLingkaran()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Jajar Genjang</h2>
+                        <p><b>Rumus Luas Jajar Genjang</b></p>
+                        <p>L = a * t<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            a = Alas (m)<br>
+                            t = tinggi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLJajarGenjang">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aJajarGenjang" placeholder="Alas (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tJajarGenjang" placeholder="Tinggi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLJajarGenjang()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Trapesium</h2>
+                        <p><b>Rumus Luas Trapesium</b></p>
+                        <p>L = 1/2 * (a + b) * t<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            a,b = Sisi Sejajar (m)<br>
+                            t = tinggi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLTrapesium">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aTrapesium" placeholder="Sisi A (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>b</i></p>
+                                <input type="number" id="bTrapesium" placeholder="Sisi B (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tTrapesium" placeholder="Tinggi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLTrapesium()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Belah Ketupat</h2>
+                        <p><b>Rumus Luas Belah Ketupat</b></p>
+                        <p>L = 1/2 * d1 * d2<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            d1 = diagonal 1 (m)<br>
+                            d2 = diagonal 2 (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLBelahKetupat">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>d1</i></p>
+                                <input type="number" id="d1BelahKetupat" placeholder="Diagonal 1 (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>d2</i></p>
+                                <input type="number" id="d2BelahKetupat" placeholder="Diagonal 2 (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLBelahKetupat()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Layang-Layang</h2>
+                        <p><b>Rumus Luas Layang-Layang</b></p>
+                        <p>L = 1/2 * d1 * d2<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            d1 = diagonal 1 (m)<br>
+                            d2 = diagonal 2 (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLLayang">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>d1</i></p>
+                                <input type="number" id="d1Layang" placeholder="Diagonal 1 (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>d2</i></p>
+                                <input type="number" id="d2Layang" placeholder="Diagonal 2 (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLLayang()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Kubus</h2>
+                        <p><b>Rumus Luas Kubus</b></p>
+                        <p>L = 6 * s²<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            s = sisi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLKubus">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sKubus" placeholder="Sisi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLKubus()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Balok</h2>
+                        <p><b>Rumus Luas Balok</b></p>
+                        <p>L = 2 * (p * l + p * t + l * t)<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            p = panjang (m)<br>
+                            l = lebar (m)<br>
+                            t = tinggi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLBalok">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>p</i></p>
+                                <input type="number" id="pBalok" placeholder="Panjang (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>l</i></p>
+                                <input type="number" id="lBalok" placeholder="Lebar (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tBalok" placeholder="Tinggi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLBalok()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Tabung</h2>
+                        <p><b>Rumus Luas Tabung</b></p>
+                        <p>L = 2πr² + 2πrt<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            π = 3.14<br>
+                            r = jari-jari (m)<br>
+                            t = tinggi (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLTabung">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>r</i></p>
+                                <input type="number" id="rTabung" placeholder="Jari-jari (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tTabung" placeholder="tinggi (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLTabung()">Hitung</button>
+                    </div>
+                </div>
+
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Luas Kerucut</h2>
+                        <p><b>Rumus Luas Kerucut</b></p>
+                        <p>L = πr(r + s)<br>
+                            Keterangan:<br>
+                            L = Luas Persegi (m²)<br>
+                            π = 3.14<br>
+                            r = jari-jari (m)<br>
+                            s = garis pelukis (m)<br>
+                        </p>
+                    </div>
+                    <div class="hitungLKerucut">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>r</i></p>
+                                <input type="number" id="rKerucut" placeholder="Jari-jari (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sKerucut" placeholder="Garis Pelukis (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungLKerucut()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+    <script src="../../cardTemplate/all.js"></script>
+</body>
+</html>

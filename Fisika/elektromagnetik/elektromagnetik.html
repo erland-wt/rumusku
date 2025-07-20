@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+       <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Induksi Elektromagnetik</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Induksi Elektromagnetik</h2>
+                <p>Induksi elektromagnetik adalah peristiwa munculnya arus listrik pada suatu penghantar (misalnya kawat) akibat adanya perubahan medan magnet di sekitarnya.
+                    Fenomena ini ditemukan oleh <b>Michael Faraday pada tahun 1831</b>. Induksi elektromagnetik merupakan dasar dari banyak teknologi modern, termasuk generator listrik dan transformator.
+                    Dalam induksi elektromagnetik, perubahan medan magnet dapat terjadi karena pergerakan magnet di sekitar penghantar atau karena perubahan arus listrik yang mengalir melalui kawat lain di dekatnya.
+                </p><br>
+                <!-- GGL Induksi -->
+                <h2>A. Rumus Gaya Gerak Listrik Induksi</h2>
+                <p>ε = -N ⋅ (ΔΦ/Δt)<br>
+                    Keterangan:<br>
+                    ε    = Gaya gerak listrik (GGL) induksi, satuan: Volt (V)<br>
+                    N    = Jumlah lilitan kawat<br>
+                    ΔΦ (Φakhir - Φawal)  = Perubahan fluks magnetik, satuan: Weber (Wb)<br>
+                    Δt   = Waktu, satuan: detik (s)<br>
+                    Tanda minus (-) menunjukkan arah arus berlawanan dengan penyebabnya (Hukum Lenz)<br>
+                </p>
+            </div>
+            <div class="hitungGGLInduksi">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>N</i></p>
+                        <input type="number" id="Nggl" placeholder="Jumlah lilitan kawat" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>ΔΦ</i></p>
+                        <input type="number" id="deltaPhiggl" placeholder="Perubahan fluks magnetik (Wb)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>Δt</i></p>
+                        <input type="number" id="deltaTggl" placeholder="Waktu (s)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungGGLInduksi()">Hitung</button>
+            </div>
+
+            <!-- Fluks Magnetik -->
+             <div class="penjelasan">
+                <h2>B. Rumus Fluks Magnetik (Φ)</h2>
+                <p>Φ = B ⋅ A ⋅ cosθ<br>
+                    Keterangan:<br>
+                    Φ    = Fluks magnetik, satuan: Weber (Wb)<br>
+                    B    = Induksi magnetik, satuan: Tesla (T)<br>
+                    A    = Luas penampang kawat, satuan: m²<br>
+                    θ    = Sudut antara garis medan magnet dan garis normal permukaan kawat, satuan: derajat (°)<br>
+                </p>
+            </div>
+            <div class="hitungFluksMagnetik">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>B</i></p>
+                        <input type="number" id="Bfluks" placeholder="Induksi magnetik (T)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>A</i></p>
+                        <input type="number" id="Afluks" placeholder="Luas penampang kawat (m²)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>θ</i></p>
+                        <input type="number" id="thetafluks" placeholder="Sudut (°)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungFluksMagnetik()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Kecepatan</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Kecepatan</h2>
+                <p>Kecepatan (bahasa inggris: velocity) merupakan besaran turunan yang diturunkan dari besaran pokok panjang dan waktu, dengan rumus kecepatan secara umum yaitu jarak dibagi waktu.</p>
+                <h2>Rumus Kecepatan</h2>
+                <p>v = s/t<br>
+                    Keterangan:<br>
+                    v = Kecepatan (velocity), satuan: m/s<br>
+                    s = Jarak atau perpindahan (meter)<br>
+                    t = Waktu (second/detik)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>s</i></p>
+                        <input type="number" id="s" placeholder="Jarak (m)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>t</i></p>
+                        <input type="number" id="t" placeholder="Waktu (s)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungKecepatan()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

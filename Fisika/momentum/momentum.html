@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Momentum</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Momentum</h2>
+                <p>Momentum adalah ukuran seberapa besar kecenderungan suatu benda untuk terus bergerak. Momentum berkaitan dengan massa dan kecepatan benda. Benda yang lebih berat atau bergerak lebih cepat punya momentum lebih besar.
+                    Semakin besar massa dan kecepatan benda, semakin besar momentum yang dimiliki benda tersebut. Momentum adalah besaran vektor, yang berarti memiliki arah dan besar. Momentum dapat dihitung dengan rumus berikut:
+                </p>
+                <h2>Rumus Momentum</h2>
+                <p>p = m ⋅ v<br>
+                    Keterangan:<br>
+                    p = Momentum (kg·m/s)<br>
+                    m = Massa benda (kg)<br>
+                    v = Kecepatan benda (m/s)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Massa (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>v</i></p>
+                        <input type="number" id="v" placeholder="Kecepatan benda (m/s)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungMomentum()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

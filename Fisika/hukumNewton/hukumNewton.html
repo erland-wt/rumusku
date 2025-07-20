@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+       <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+
+        <!-- Hukum Newton I -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Hukum Newton</p>
+            </div>
+            <div class="penjelasan">
+                <div class="newton1">
+                    <h2>Hukum Newton I</h2>
+                    <p> <b>Bunyi Hukum Newton I:</b><br>
+                        "Sebuah benda akan tetap dalam keadaan diam atau bergerak lurus beraturan, kecuali ada gaya luar yang bekerja padanya."
+                    </p><br>
+                    <p><b>Penjelasan:</b><br>
+                        Benda diam akan tetap diam, dan benda bergerak lurus beraturan akan terus bergerak dengan kecepatan tetap, jika tidak ada gaya yang bekerja padanya. Hukum ini juga dikenal sebagai hukum inersia.
+                    </p><br>
+                    <p><b>Contoh:</b><br>
+                        Bola yang menggelinding di lantai datar akan terus bergerak, kecuali dihentikan oleh gaya gesek atau ditahan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hukum Newton II -->
+        <div class="content-wrapper">
+            <div class="penjelasan">
+                <div class="newton2">
+                    <h2>Hukum Newton II</h2>
+                    <p> <b>Bunyi Hukum Newton II:</b><br>
+                        "Percepatan suatu benda berbanding lurus dengan gaya total yang bekerja padanya dan berbanding terbalik dengan massanya."
+                    </p><br>
+                    <p><b>Penjelasan:</b><br>
+                        Semakin besar gaya, semakin besar percepatan. Semakin besar massa, semakin kecil percepatan untuk gaya yang sama.
+                    </p>
+                    <h2>Rumus Hukum Newton II</h2>
+                    <p>F = m x a<br>
+                        Keterangan:<br>
+                        F = gaya total (N)<br>
+                        m = Massa benda (kg)<br>
+                        a = Percepatan (m/s²)
+                    </p>
+                </div>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Masa benda (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>a</i></p>
+                        <input type="number" id="a" placeholder="Percepatan (m/s²)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungHukumNewtonII()">Hitung</button>
+            </div>
+        </div>
+
+        <!-- Hukum Newton III -->
+        <div class="content-wrapper">
+            <div class="penjelasan">
+                <div class="newton3">
+                    <h2>Hukum Newton III</h2>
+                    <p> <b>Bunyi Hukum Newton III:</b><br>
+                        "Untuk setiap aksi selalu ada reaksi yang sama besar dan berlawanan arah."
+                    </p><br>
+                    <p><b>Penjelasan:</b><br>
+                        Gaya selalu bekerja berpasangan.Jika benda A memberikan gaya pada benda B, maka benda B memberikan gaya yang sama besar ke A, tetapi berlawanan arah.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

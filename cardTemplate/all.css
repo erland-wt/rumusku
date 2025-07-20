@@ -1,0 +1,218 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FFF2E1;
+}
+
+/* Navbar Start */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    margin-bottom: 5px;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+nav ul li.active a {
+    background-color: #FFF2E1;
+    color: #A79277;
+    border-radius: 5px;
+}
+
+nav p {
+    font-size: 2.5em;
+    font-weight: semi-bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF2E1;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    transform: translate(0, 7px);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFF2E1;
+    color: #A79277;
+    transition: 0.3s;
+}
+/* Navbar End */
+
+/* MAIN CONTENT */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.search-wrapper input {
+    width: 50%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid #A79277;
+    font-size: 1em;
+}
+
+.materi-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 30px;
+}
+
+.materi-cards-matematika {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 20px;
+}
+
+.materi-cards-matematika .materi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.materi-cards-matematika .materi .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.materi-cards .materi .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.materi-cards .materi button {
+    background-color: #FFF2E1;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.materi-cards .materi .header button a {
+    text-decoration: none;
+    color: #A79277;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .materi-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .materi-cards-matematika {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-wrapper input {
+        width: 80%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .materi-cards .materi button {
+        width: 100%;
+        margin-top: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .materi-cards .materi .header h2 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px) {
+    .materi-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .materi-cards-matematika {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-wrapper input {
+        width: 80%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .materi-cards .materi button {
+        width: 100%;
+        margin-top: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .materi-cards .materi .header h2 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+
+}

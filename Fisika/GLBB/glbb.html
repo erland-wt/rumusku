@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Gerak Lurus Berubah Beraturan (GLBB)</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Gerak Lurus Berubah Beraturan (GLBB)</h2>
+                <p> GLBB (Gerak Lurus Berubah Beraturan) adalah gerak benda dalam lintasan lurus dengan percepatan konstan. Artinya, kecepatan benda berubah secara teratur (beraturan) setiap detik.
+                    Dalam GLBB, terdapat dua jenis gerakan, yaitu GLBB positif (percepatan positif) dan GLBB negatif (percepatan negatif).<br>
+                    Pada GLBB positif, benda bergerak dengan kecepatan semakin cepat, sedangkan pada GLBB negatif, benda bergerak dengan kecepatan semakin lambat.
+                </p>
+                <div class="isi-wrapper">
+                    <h2>Rumus Rumus Dasar GLBB</h2>
+                    <!-- Kecepatan Akhir -->
+                    <p><b>1. Kecepatan Akhir</b></p>
+                    <p>v = v₀ + at<br>
+                        Keterangan:<br>
+                        v = Kecepatan akhir (m/s)<br>
+                        v₀ = Kecepatan awal (m/s)<br>
+                        a = Percepatan (m/s²)<br>
+                        t = Waktu (s)
+                    </p>
+                    <div class="hitungGLBBKecepatanAkhir">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>v₀</i></p>
+                                <input type="number" id="v0" placeholder="Kecepatan awal (m/s)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aGLBB" placeholder="Percepatan (m/s²)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tGLBB" placeholder="Waktu (s)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungGLBBKecepatanAkhir()">Hitung</button>
+                    </div><br>
+                    <!-- Jarak Tempuh -->
+                    <p><b>2. Jarak Tempuh</b></p>
+                    <p>
+                        s = v₀t + 1/2 at²<br>
+                        Keterangan:<br>
+                        s = Jarak tempuh (m)<br>
+                        v₀ = Kecepatan awal (m/s)<br>
+                        a = Percepatan (m/s²)<br>
+                        t = Waktu (s)
+                    </p>
+                    <div class="hitungGLBBJarakTempuh">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>v₀</i></p>
+                                <input type="number" id="v0JT" placeholder="Kecepatan awal (m/s)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aGLBBJT" placeholder="Percepatan (m/s²)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tGLBBJT" placeholder="Waktu (s)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungGLBBJarakTempuh()">Hitung</button>
+                    </div><br>
+                    <!-- Hubungan Jarak dan Kecepatan -->
+                    <p><b>3. Hubungan Kecepatan dan Jarak</b></p>
+                    <p>
+                        v² = v₀² + 2as<br>
+                        Keterangan:<br>
+                        v = Kecepatan akhir (m/s)<br>
+                        v₀ = Kecepatan awal (m/s)<br>
+                        a = Percepatan (m/s²)<br>
+                        s = Jarak tempuh (m)
+                    </p>
+                    <div class="hitungGLBBJarakKecepatan">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>v₀</i></p>
+                                <input type="number" id="v0JK" placeholder="Kecepatan awal (m/s)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aGLBBJK" placeholder="Percepatan (m/s²)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="sGLBBJK" placeholder="Jarak tempuh (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungGLBBJarakKecepatan()">Hitung</button>
+                    </div><br>
+                    <!-- Jarak saat benda mula-mula diam (v₀ = 0) -->
+                    <p><b>4. Jarak saat benda mula-mula diam (v₀ = 0)</b></p>
+                    <p>
+                        s = 1/2at²<br>
+                        Keterangan:<br>
+                        s = Jarak tempuh (m)<br>
+                        a = Percepatan (m/s²)<br>
+                        t = Waktu (s)
+                    </p>
+                    <div class="hitungGLBBBendaDiam">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>a</i></p>
+                                <input type="number" id="aBendaDiam" placeholder="Percepatan (m/s²)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>t</i></p>
+                                <input type="number" id="tBendaDiam" placeholder="Waktu (s)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungGLBBBendaDiam()">Hitung</button>
+                    </div><br>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

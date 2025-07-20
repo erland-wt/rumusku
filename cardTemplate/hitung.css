@@ -1,0 +1,450 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FFF2E1;
+}
+
+/* Navbar Start */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    margin-bottom: 5px;
+    background-color: #A79277;
+    color: #FFF2E1;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+nav ul li.active a {
+    background-color: #FFF2E1;
+    color: #A79277;
+    border-radius: 5px;
+}
+
+nav p {
+    font-size: 2.5em;
+    font-weight: semi-bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF2E1;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    transform: translate(0, 7px);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FFF2E1;
+    color: #A79277;
+    transition: 0.3s;
+}
+/* Navbar End */
+
+/* Main Start */
+.content-wrapper .mini-navbar {
+    margin: 40px 20px; 
+}
+
+.content-wrapper .mini-navbar a, 
+.content-wrapper .mini-navbar p {
+    text-decoration: none;
+    color: #A79277;
+    font-size: 1em;
+    font-weight: semi-bold;
+}
+
+.content-wrapper .penjelasan,
+.content-wrapper .hitung,
+.content-wrapper .hitungHambatan,
+.content-wrapper .hitungEp2,
+.content-wrapper .hitungEk2,
+.content-wrapper .hitungFrekuensi,
+.content-wrapper .hitungPeriode,
+.content-wrapper .hitungGema,
+.content-wrapper .hitungDawai,
+.content-wrapper .hitungGCahaya,
+.content-wrapper .hitungGGLInduksi,
+.content-wrapper .hitungFluksMagnetik,
+.content-wrapper .hitungGLBBKecepatanAkhir,
+.content-wrapper .hitungGLBBJarakTempuh,
+.content-wrapper .hitungGLBBJarakKecepatan,
+.content-wrapper .hitungGLBBBendaDiam,
+.content-wrapper .hitungArus,
+.content-wrapper .hitungLSegitiga,
+.content-wrapper .hitungLPersegi,
+.content-wrapper .hitungLPersegiPanjang,
+.content-wrapper .hitungLLingkaran,
+.content-wrapper .hitungLJajarGenjang,
+.content-wrapper .hitungLTrapesium,
+.content-wrapper .hitungLBelahKetupat,
+.content-wrapper .hitungLLayang,
+.content-wrapper .hitungLKubus,
+.content-wrapper .hitungLBalok,
+.content-wrapper .hitungLTabung,
+.content-wrapper .hitungLKerucut,
+.content-wrapper .hitungKSegitiga,
+.content-wrapper .hitungKPersegi,
+.content-wrapper .hitungKPersegiPanjang,
+.content-wrapper .hitungKLingkaran,
+.content-wrapper .hitungKJajarGenjang,
+.content-wrapper .hitungKTrapesium,
+.content-wrapper .hitungKBelahKetupat,
+.content-wrapper .hitungKLayangLayang,
+.content-wrapper .hitungKKubus,
+.content-wrapper .hitungKBalok,
+.content-wrapper .hitungVKubus,
+.content-wrapper .hitungVBalok,
+.content-wrapper .hitungVTabung,
+.content-wrapper .hitungVKerucut,
+.content-wrapper .hitungVBola,
+.content-wrapper .hitungMeanTunggal,
+.content-wrapper .hitungPythagoras,
+.content-wrapper .hitungSkala,
+.content-wrapper .hitungTurunanPangkat,
+.content-wrapper .hitungTurunanPenjumlahan,
+.content-wrapper .hitungTurunanPengurangan {
+    margin: 20px;
+    color: #7e6e5a;
+}
+
+.content-wrapper .hitung h2,
+.content-wrapper .hitungHambatan h2,
+.content-wrapper .hitungArus h2,
+.content-wrapper .hitungEp2 h2,
+.content-wrapper .hitungEk2 h2,
+.content-wrapper .hitungFrekuensi h2,
+.content-wrapper .hitungPeriode h2,
+.content-wrapper .hitungGema h2,
+.content-wrapper .hitungDawai h2,
+.content-wrapper .hitungGCahaya h2,
+.content-wrapper .hitungGGLInduksi h2,
+.content-wrapper .hitungFluksMagnetik h2,
+.content-wrapper .hitungGLBBKecepatanAkhir h2,
+.content-wrapper .hitungGLBBJarakTempuh h2,
+.content-wrapper .hitungGLBBJarakKecepatan h2,
+.content-wrapper .hitungGLBBBendaDiam h2,
+.content-wrapper .penjelasan h2,
+.content-wrapper .hitungLSegitiga h2,
+.content-wrapper .hitungLPersegi h2,
+.content-wrapper .hitungLPersegiPanjang h2,
+.content-wrapper .hitungLLingkaran h2,
+.content-wrapper .hitungLJajarGenjang h2,
+.content-wrapper .hitungLTrapesium h2,
+.content-wrapper .hitungLBelahKetupat h2,
+.content-wrapper .hitungLLayang h2,
+.content-wrapper .hitungLKubus h2,
+.content-wrapper .hitungLBalok h2,
+.content-wrapper .hitungLTabung h2,
+.content-wrapper .hitungLKerucut h2,
+.content-wrapper .hitungKSegitiga h2,
+.content-wrapper .hitungKPersegi h2,
+.content-wrapper .hitungKPersegiPanjang h2,
+.content-wrapper .hitungKLingkaran h2,
+.content-wrapper .hitungKJajarGenjang h2,
+.content-wrapper .hitungKTrapesium h2,
+.content-wrapper .hitungKBelahKetupat h2,
+.content-wrapper .hitungKLayangLayang h2,
+.content-wrapper .hitungKKubus h2,
+.content-wrapper .hitungKBalok h2,
+.content-wrapper .hitungVKubus h2,
+.content-wrapper .hitungVBalok h2,
+.content-wrapper .hitungVTabung h2,
+.content-wrapper .hitungVKerucut h2,
+.content-wrapper .hitungVBola h2,
+.content-wrapper .hitungMeanTunggal h2,
+.content-wrapper .hitungPythagoras h2,
+.content-wrapper .hitungSkala h2,
+.content-wrapper .hitungTurunanPangkat h2,
+.content-wrapper .hitungTurunanPenjumlahan h2,
+.content-wrapper .hitungTurunanPengurangan h2 {
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.content-wrapper .penjelasan p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.isi-wrapper {
+    border: 1px solid #A79277;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px;
+
+}
+
+.input-wrapper input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #A79277;
+    margin: 10px 0 10px 0;
+}
+
+.hitung,
+.hitungHambatan,
+.hitungArus,
+.hitungEp2,
+.hitungEk2,
+.hitungFrekuensi,
+.hitungPeriode,
+.hitungGema,
+.hitungDawai,
+.hitungGCahaya,
+.hitungGGLInduksi,
+.hitungFluksMagnetik,
+.hitungGLBBKecepatanAkhir,
+.hitungGLBBJarakTempuh,
+.hitungGLBBJarakKecepatan,
+.hitungGLBBBendaDiam,
+.hitungLSegitiga,
+.hitungLPersegi,
+.hitungLPersegiPanjang,
+.hitungLLingkaran,
+.hitungLJajarGenjang,
+.hitungLTrapesium,
+.hitungLBelahKetupat,
+.hitungLLayang,
+.hitungLKubus,
+.hitungLBalok,
+.hitungLTabung,
+.hitungLKerucut,
+.hitungKSegitiga,
+.hitungKPersegi,
+.hitungKPersegiPanjang,
+.hitungKLingkaran,
+.hitungKJajarGenjang,
+.hitungKTrapesium,
+.hitungKBelahKetupat,
+.hitungKLayangLayang,
+.hitungKKubus,
+.hitungKBalok,
+.hitungVKubus,
+.hitungVBalok,
+.hitungVTabung,
+.hitungVKerucut,
+.hitungVBola,
+.hitungMeanTunggal,
+.hitungPythagoras,
+.hitungSkala,
+.hitungTurunanPangkat,
+.hitungTurunanPenjumlahan,
+.hitungTurunanPengurangan {
+    margin: 20px;
+    border: 1px solid #A79277;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.hitung button,
+.hitungHambatan button,
+.hitungArus button,
+.hitungEp2 button,
+.hitungEk2 button,
+.hitungFrekuensi button,
+.hitungPeriode button,
+.hitungGema button,
+.hitungDawai button,
+.hitungGCahaya button,
+.hitungGGLInduksi button,
+.hitungFluksMagnetik button,
+.hitungGLBBKecepatanAkhir button,
+.hitungGLBBJarakTempuh button,
+.hitungGLBBJarakKecepatan button,
+.hitungGLBBBendaDiam button,
+.hitungLSegitiga button,
+.hitungLPersegi button,
+.hitungLPersegiPanjang button,
+.hitungLLingkaran button,
+.hitungLJajarGenjang button,
+.hitungLTrapesium button,
+.hitungLBelahKetupat button,
+.hitungLLayang button,
+.hitungLKubus button,
+.hitungLBalok button,
+.hitungLTabung button,
+.hitungLKerucut button,
+.hitungKSegitiga button,
+.hitungKPersegi button,
+.hitungKPersegiPanjang button,
+.hitungKLingkaran button,
+.hitungKJajarGenjang button,
+.hitungKTrapesium button,
+.hitungKBelahKetupat button,
+.hitungKLayangLayang button,
+.hitungKKubus button,
+.hitungKBalok button,
+.hitungVKubus button,
+.hitungVBalok button,
+.hitungVTabung button, 
+.hitungVKerucut button,
+.hitungVBola button,
+.hitungMeanTunggal button,
+.hitungPythagoras button,
+.hitungSkala button,
+.hitungTurunanPangkat button,
+.hitungTurunanPenjumlahan button,
+.hitungTurunanPengurangan button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A79277;
+    color: #FFF2E1;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hasil,
+.hasilHambatan,
+.hasilArus,
+.hasilEp2,
+.hasilEk2,
+.hasilFrekuensi,
+.hasilPeriode,
+.hasilGema,
+.hasilDawai,
+.hasilGCahaya,
+.hasilGGLInduksi,
+.hasilFluksMagnetik,
+.hasilGLBBKecepatanAkhir,
+.hasilGLBBJarakTempuh,
+.hasilGLBBJarakKecepatan,
+.hasilGLBBBendaDiam,
+.hasilLSegitiga,
+.hasilLPersegi,
+.hasilLPersegiPanjang,
+.hasilLLingkaran,
+.hasilLJajarGenjang,
+.hasilLTrapesium,
+.hasilLBelahKetupat,
+.hasilLLayang,
+.hasilLKubus,
+.hasilLBalok,
+.hasilLTabung,
+.hasilLKerucut,
+.hasilKSegitiga,
+.hasilKPersegi,
+.hasilKPersegiPanjang,
+.hasilKLingkaran,
+.hasilKJajarGenjang,
+.hasilKTrapesium,
+.hasilKBelahKetupat,
+.hasilKLayangLayang,
+.hasilKKubus,
+.hasilKBalok,
+.hasilVKubus,
+.hasilVBalok,
+.hasilVTabung,
+.hasilVKerucut,
+.hasilVBola,
+.hasilMeanTunggal,
+.hasilPythagoras,
+.hasilSkala,
+.hasilTurunanPangkat {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8e5d1;
+    border: 1px solid #a79277;
+    color: #5a4a3c;
+}
+/* FISIKA END */
+
+
+/* MATEMATIKA START */
+.hitungPythagoras,
+.hitungSkala {
+    margin: 20px;
+    border: 1px solid #A79277;
+    border-radius: 10px;
+    padding: 20px;
+    color: #7e6e5a;
+}
+
+.hitungPythagoras h2,
+.hitungSkala h2 {
+    font-size: 3em;
+}
+
+.hitungPythagoras button,
+.hitungSkala button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A79277;
+    color: #FFF2E1;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.pythagoras-input-area input,
+.skala-input-area input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #A79277;
+    margin: 10px 0 10px 0;
+}
+
+.pythagoras-input-area,
+.skala-input-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.active-pythagoras-btn,
+.active-skala-btn {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.hitung-wrapper {
+    margin: 0 20px;
+}
+

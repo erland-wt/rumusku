@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Massa Jenis</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Massa Jenis</h2>
+                <p> Massa jenis adalah besaran yang menyatakan massa suatu zat per satuan volume. Massa jenis menunjukkan seberapa padat suatu zat, atau berapa banyak massa yang terkandung dalam suatu volume tertentu.
+                    Massa jenis dapat digunakan untuk membandingkan kerapatan berbagai zat. Zat dengan massa jenis yang lebih tinggi akan lebih padat dibandingkan zat dengan massa jenis yang lebih rendah.
+                </p>
+                <h2>Rumus Massa Jenis</h2>
+                <p>ρ = m / V<br>
+                    Keterangan:<br>
+                    ρ (rho) = massa jenis (kg/m³)<br>
+                    m = Massa benda (kg)<br>
+                    V = Volume benda (m³)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Masa benda (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>V</i></p>
+                        <input type="number" id="V" placeholder="Volume benda (m³)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungMassaJenis()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

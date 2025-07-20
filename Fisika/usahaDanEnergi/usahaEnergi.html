@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Usaha & Energi</p>
+            </div>
+            <!-- Usaha -->
+            <div class="penjelasan">
+                <h2>Usaha & Energi</h2>
+                <div class="isi-wrapper">
+                    <h2>Usaha</h2>
+                    <p>Dalam fisika, usaha terjadi saat suatu gaya menyebabkan perpindahan pada suatu benda. 
+                        Artinya, jika kamu mendorong atau menarik suatu benda dan benda itu berpindah, kamu telah melakukan usaha.
+
+                    </p>
+                    <h2>Rumus Usaha</h2>
+                    <p>W = F ⋅ s ⋅ cosθ<br>
+                        Keterangan:<br>
+                        W = usaha (Joule / J)<br>
+                        F = Gaya (N)<br>
+                        s = Perpindahan (m)<br>
+                        θ (theta) = Sudut antara arah gaya dan perpindahan
+                    </p>
+                    <div class="hitung">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>F</i></p>
+                                <input type="number" id="F" placeholder="Gaya (N)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>s</i></p>
+                                <input type="number" id="s" placeholder="Perpindahan (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>θ</i></p>
+                                <input type="number" id="theta" placeholder="Sudut antara arah gaya dan perpindahan" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungUsahaTheta()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Energi -->
+            <div class="penjelasan">
+                <div class="isi-wrapper">
+                    <h2>Energi</h2>
+                    <p>Energi adalah kemampuan untuk melakukan usaha. Energi dapat berbentuk energi kinetik, energi potensial, energi listrik, dan lain-lain. 
+                        Dalam fisika, kita sering membahas dua jenis energi yang paling umum, yaitu energi kinetik, dan energi potensial.
+                    </p>
+                    <h2>Rumus Energi</h2>
+                    <!-- Energi Potensial -->
+                    <p><b>1. Energi Potensial</b></p>
+                    <p>Ep = m ⋅ g ⋅ h<br>
+                        Keterangan:<br>
+                        Eₚ = Energi potensial gravitasi (Joule, J)<br>
+                        m = Massa benda (kg)<br>
+                        g = Percepatan gravitasi (9,8 m/s²)<br>
+                        h = Tinggi benda dari permukaan tanah (m)
+                    </p>
+                    <div class="hitungEp2">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>m</i></p>
+                                <input type="number" id="m" placeholder="Massa benda (kg)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>g</i></p>
+                                <input type="number" id="g" placeholder="Percepatan gravitasi (9,8 m/s²)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>h</i></p>
+                                <input type="number" id="h" placeholder="Tinggi benda (m)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungEnergiPotensial2()">Hitung</button>
+                    </div><br><br><br>
+
+                    <!-- Energi Kinetik -->
+                    <p><b>2. Energi Kinetik</b></p>
+                    <p>Eₖ = 1/2 ⋅ m ⋅ v²<br>
+                        Keterangan:<br>
+                        Eₖ = Energi kinetik (Joule, J)<br>
+                        m = Massa benda (kg)<br>
+                        v = Kecepatan benda (m/s)
+                    <div class="hitungEk2">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>m</i></p>
+                                <input type="number" id="mk" placeholder="Massa benda (kg)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>v</i></p>
+                                <input type="number" id="v" placeholder="Kecepatan benda (m/s)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungEnergiKinetik2()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

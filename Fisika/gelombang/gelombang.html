@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Gelombang</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Gelombang</h2>
+                <p>Gelombang adalah getaran yang merambat melalui suatu medium atau ruang, dan menghantarkan energi tanpa memindahkan partikel secara permanen.
+                    Gelombang dapat terjadi dalam berbagai bentuk, seperti gelombang suara, gelombang cahaya, dan gelombang air.
+                    Gelombang memiliki beberapa karakteristik penting, termasuk panjang gelombang, frekuensi, amplitudo, dan kecepatan.
+                    Gelombang dapat dibedakan menjadi dua jenis utama: gelombang transversal dan gelombang longitudinal.
+                </p>
+                <!-- Cepat Rambat Gelombang -->
+                <div class="isi-wrapper">
+                    <h2>Rumus Cepat Rambat Gelombang</h2>
+                    <p>𝑣 = λ ⋅ 𝑓<br>
+                        Keterangan:<br>
+                        𝑣 = Cepat rambat gelombang (m/s)<br>
+                        𝜆 = Panjang gelombang (m)<br>
+                        𝑓 = Frekuensi (Hz)
+                    </p>
+                    <div class="hitung">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>𝜆</i></p>
+                                <input type="number" id="lambda" placeholder="Panjang gelombang (m)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>𝑓</i></p>
+                                <input type="number" id="f" placeholder="Frekuensi (Hz)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungCepatRambat()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frekuensi dan Periode -->
+            <div class="penjelasan">
+                <div class="isi-wrapper">
+                    <h2>Rumus Frekuensi & Periode</h2>
+                    <!-- Frekuensi -->
+                    <p><b>1. Frekuensi</b></p>
+                    <p>f = 1/T<br>
+                        Keterangan:<br>
+                        f = Frekuensi (Hz)<br>
+                        T = Periode (detik)
+                    </p><br>
+                    <div class="hitungFrekuensi">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>T</i></p>
+                                <input type="number" id="T" placeholder="Periode (detik)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungFrekuensi()">Hitung</button>
+                    </div><br><br><br>
+
+                    <!-- Periode -->
+                    <p><b>2. Periode</b></p>
+                    <p>T= 1/f<br>
+                        Keterangan:<br>
+                        T = Periode (detik)<br>
+                        f = Frekuensi (Hz)
+                    </p><br>
+                    <div class="hitungPeriode">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>f</i></p>
+                                <input type="number" id="fperiode" placeholder="Frekuensi (Hz)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungPeriode()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

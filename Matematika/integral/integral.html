@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../cardTemplate/all.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="../../Fisika/fisika.html">Fisika</a></li> 
+                <li class="active"><a href="../matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../matematika.html">Matematika </a>| Integral</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Integral</h2>
+                <p>Turunan (dalam bahasa Inggris: derivative) adalah suatu konsep dalam kalkulus yang digunakan untuk menentukan laju perubahan suatu fungsi terhadap variabel bebasnya.
+                    Turunan memberikan informasi tentang bagaimana suatu fungsi berubah pada titik tertentu, dan sering digunakan untuk menentukan kemiringan garis singgung pada grafik fungsi tersebut.
+                </p>
+            </div>
+            <div class="hitung-wrapper">
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Rumus Turunan Pangkat</h2><br>
+                        <p><b>d/dx(xⁿ) = n × xⁿ⁻¹</b><br><br>
+                            <b>Keterangan:</b><br>
+                            d/dx = notasi turunan<br>
+                            x = variabel independen<br>
+                            n = Pangkat dari 𝑥 (bisa integer, pecahan, negatif)<br>
+                            xⁿ = fungsi yang diturunkan<br>
+                            n × xⁿ⁻¹ = hasil turunan dari fungsi tersebut<br>
+                        </p><br>
+                        <p><b>Digunakan ketika fungsi berbentuk polinomial atau pangkat, seperti:</b>
+                            <ul>
+                                <li>f(x) = x³</li>
+                                <li>f(x) = x⁻²</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="hitungTurunanPangkat">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>n</i></p>
+                                <input type="number" id="nTurunanPangkat" placeholder="Konstanta" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungTurunanPangkat()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+    <script src="../../cardTemplate/all.js"></script>
+</body>
+</html>

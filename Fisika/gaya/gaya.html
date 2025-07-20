@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Gaya</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Gaya</h2>
+                <p>Gaya dalam ilmu fisika adalah interaksi apa pun yang dapat menyebabkan sebuah benda bermassa mengalami perubahan gerak, baik dalam bentuk arah, maupun konstruksi geometris.
+                     Dengan kata lain, sebuah gaya dapat menyebabkan sebuah objek dengan massa tertentu mengalami perubahan kecepatan. 
+                     Perubahan kecepatan dapat terjadi dari kondisi benda diam menjadi bergerak, kondisi benda yang mengalami pertambahan kecepatan (berakselerasi), maupun mengalami perlambatan kecepatan.</p>
+                <h2>Rumus Gaya</h2>
+                <p>F = m x a<br>
+                    Keterangan:<br>
+                    F    = Gaya (force), satuan: Newton (N)<br>
+                    m    = Massa, satuan: kilogram (kg)<br>
+                    a    = Percepatan (acceleration), satuan: m/s²
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Massa (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>a</i></p>
+                        <input type="number" id="a" placeholder="Percepatan (m/s²)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungGaya()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

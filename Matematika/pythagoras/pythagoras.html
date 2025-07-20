@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../cardTemplate/all.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="../../Fisika/fisika.html">Fisika</a></li> 
+                <li class="active"><a href="../matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../matematika.html">Matematika </a>| Teorema Pythagoras</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Teorema Pythagoras</h2>
+                <p>Teorema Pythagoras adalah suatu aturan dalam segitiga siku-siku (segitiga dengan satu sudut 90°), yang menyatakan bahwa:<br><br>
+                    <b>"Kuadrat panjang sisi miring (hipotenusa) sama dengan jumlah kuadrat dari dua sisi lainnya."</b><br><br>
+                    Dalam notasi matematika, teorema ini dapat dituliskan sebagai:<br>
+                </p>
+            </div>
+            <div class="hitung-wrapper">
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Rumus Teorema Pythagoras</h2>
+                        <p>c² = a² + b² (Mencari sisi c atau hipotenusa)<br>
+                            a² = c² - b² (Mencari sisi a)<br>
+                            b² = c² - a² (Mencari sisi b)<br><br>
+                            Keterangan:<br>
+                            c = panjang sisi miring (hipotenusa), sisi yang bersebrangan dengan sudut 90°<br>
+                            a = panjang salah satu sisi tegak (horizontal)<br>
+                            b = panjang sisi tegak lainnya (vertikal)<br>
+                        </p>
+                    </div>
+                    <div class="hitungPythagoras">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input">
+                            <div id="inputPythagorasList">
+                                <button type="button" id="btnTambahRumusc">Rumus Mencari Sisi C</button>
+                                <button type="button" id="btnTambahRumusa">Rumus Mencari Sisi a</button>
+                                <button type="button" id="btnTambahRumusb">Rumus Mencari Sisi b</button>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungPythagoras()">Hitung</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+    <script src="../../cardTemplate/all.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../cardTemplate/all.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="../../Fisika/fisika.html">Fisika</a></li> 
+                <li class="active"><a href="../matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../matematika.html">Matematika </a>| Rata-rata (Mean)</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Rata-rata (Mean)</h2>
+                <p>Rata-rata (mean) adalah ukuran pemusatan data yang menunjukkan 
+                    nilai tengah secara umum dari suatu kumpulan data. 
+                    Mean digunakan untuk mengetahui seberapa besar nilai 
+                    “rata-rata” dari keseluruhan data.
+                </p>
+            </div>
+            <div class="materi-cards-matematika">
+                <div class="isi-wrapper">
+                    <div class="penjelasan">
+                        <h2>Mean Untuk Data Tunggal</h2>
+                        <p>x̄ = Σx/n<br>
+                            Keterangan:<br>
+                            x̄ = rata-rata<br>
+                            Σx = Jumlah dari semua nilai data<br>
+                            n = Banyaknya data
+                        </p>
+                    </div>
+                    <div class="hitungMeanTunggal">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div id="inputMeanTunggalList">
+                                <button type="button" id="btnTambahData" style="margin:10px 0;">Tambah Data</button>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungMeanTunggal()">Hitung</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+    <script src="../../cardTemplate/all.js"></script>
+</body>
+</html>

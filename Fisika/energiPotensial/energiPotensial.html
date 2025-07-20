@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Energi Potensial</p>
+            </div>
+            <div class="penjelasan">
+                <h2>Energi Potensial</h2>
+                <p> Energi potensial adalah energi yang dimiliki oleh suatu benda karena posisi atau kedudukannya dalam suatu medan gaya, seperti medan gravitasi atau medan pegas.
+                    Energi potensial tergantung pada massa benda, tinggi benda dari permukaan tanah, dan gaya gravitasi. Semakin tinggi posisi benda, semakin besar energi potensialnya.
+                </p>
+                <h2>Rumus Energi Potensial</h2>
+                <p>Eₚ = m g h<br>
+                    Keterangan:<br>
+                    Eₚ = Energi potensial gravitasi (Joule, J)<br>
+                    m = Massa benda (kg)<br>
+                    g = percepatan gravitasi (9,8 m/s²)<br>
+                    h = Tinggi benda dari permukaan tanah (m)
+                </p>
+            </div>
+            <div class="hitung">
+                <h2>Mulai Hitung</h2>
+                <div class="input-wrapper">
+                    <div class="input">
+                        <p>Masukkan nilai <i>m</i></p>
+                        <input type="number" id="m" placeholder="Massa benda (kg)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>g</i></p>
+                        <input type="number" id="g" placeholder="Percepatan gravitasi (m/s²)" required>
+                    </div>
+                    <div class="input">
+                        <p>Masukkan nilai <i>h</i></p>
+                        <input type="number" id="h" placeholder="Tinggi benda (m)" required>
+                    </div>
+                </div>
+                <button id="hitung" onclick="hitungEnergiPotensial()">Hitung</button>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>

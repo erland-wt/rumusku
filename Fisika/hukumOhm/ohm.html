@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusku</title>
+    <link rel="stylesheet" href="../../cardTemplate/hitung.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../image/logoRumusku.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            <p>Rumusku</p>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li class="active"><a href="../fisika.html">Fisika</a></li> 
+                <li><a href="../../Matematika/matematika.html">Matematika</a></li>  
+            </ul>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- MAIN CONTENT -->
+        <div class="content-wrapper">
+            <div class="mini-navbar">
+                <p><a href="../fisika.html">Fisika </a>| Hukum Ohm</p>
+            </div>
+            <!-- Tegangan -->
+            <div class="penjelasan">
+                <h2>Hukum Ohm</h2>
+                <p>  Hukum Ohm menyatakan bahwa kuat arus listrik yang mengalir melalui suatu penghantar 
+                    berbanding lurus dengan beda potensial (tegangan) di ujung-ujung penghantar tersebut, asalkan suhu dan kondisi fisik penghantar tetap.
+                </p>
+                <div class="isi-wrapper">
+                    <h2>Rumus Hukum Ohm (Tegangan)</h2>
+                    <p>V = I x R<br>
+                        Keterangan:<br>
+                        V = Tegangan (volt, V)<br>
+                        I = Arus listrik (ampere, A)<br>
+                        R = Hambatan (ohm, Ω)
+                    </p>
+                    <div class="hitung">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>I</i></p>
+                                <input type="number" id="I" placeholder="Arus listik (A)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>R</i></p>
+                                <input type="number" id="R" placeholder="Hambatan (Ω)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungHukumOhmTegangan()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Hambatan -->
+            <div class="penjelasan">
+                <div class="isi-wrapper">
+                    <h2>Rumus Hukum Ohm (Hambatan)</h2>
+                    <p>R = V/I<br>
+                        Keterangan:<br>
+                        R = Hambatan (ohm, Ω)<br>
+                        V = Tegangan (volt, V)<br>
+                        I = Arus listrik (ampere, A)
+                    </p>
+                    <div class="hitungHambatan">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>V</i></p>
+                                <input type="number" id="Vr" placeholder="Tegangan (V)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>I</i></p>
+                                <input type="number" id="Ir" placeholder="Arus listrik (A)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungHukumOhmHambatan()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Arus -->
+            <div class="penjelasan">
+                <div class="isi-wrapper">
+                    <h2>Rumus Hukum Ohm (Arus Listrik)</h2>
+                    <p>I = V/R<br>
+                        Keterangan:<br>
+                        I = Arus listrik (ampere, A)<br>
+                        V = Tegangan (volt, V)<br>
+                        R = Hambatan (ohm, Ω)
+                    </p>
+                    <div class="hitungArus">
+                        <h2>Mulai Hitung</h2>
+                        <div class="input-wrapper">
+                            <div class="input">
+                                <p>Masukkan nilai <i>V</i></p>
+                                <input type="number" id="Va" placeholder="Tegangan (V)" required>
+                            </div>
+                            <div class="input">
+                                <p>Masukkan nilai <i>R</i></p>
+                                <input type="number" id="Ra" placeholder="Hambatan (Ω)" required>
+                            </div>
+                        </div>
+                        <button id="hitung" onclick="hitungHukumOhmArus()">Hitung</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    
+    <script src="../../rumus/perhitungan.js" defer></script>
+</body>
+</html>
